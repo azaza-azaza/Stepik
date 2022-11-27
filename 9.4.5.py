@@ -1,12 +1,11 @@
 n = input()
 
-el = ''
+symb = ''
 count = 0
 
-for i in range(len(n)):
+for el in n:
+    if n.count(el) >= count:
+        count = n.count(el)
+        symb = el
+print(symb)
 
-    if n.count(n[i]) > count:
-        el = n[i]
-        count = n.count(n[i])
-
-print(el)
