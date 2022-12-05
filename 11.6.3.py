@@ -1,6 +1,6 @@
 num = input()
-
-start = num[0]
+#
+# start = num[0]
 num = int(num[1:])
 answer = list()
 
