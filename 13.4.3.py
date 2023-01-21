@@ -4,7 +4,8 @@ def find_all(text, letter):
     start = 0
     for i in range(how_many):
         start = text.find(letter, start)
-        places.append(text.find(letter, start+1)+i)
+        places.append(text.find(letter, start))
+        start += 1
 
     return places
 
