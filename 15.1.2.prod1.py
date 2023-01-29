@@ -1,11 +1,10 @@
 # Добро пожаловать в числовую угадайку
 
-import math as m
 import random as r
 
 print('Добро пожаловать в числовую угадайку')
 upper_num = int(input('Установите максимальное число >>>'))
-num = r.randint(0, upper_num)
+num = r.randint(1, upper_num)
 digit = int(input('Введите ваше число >>>'))
 count = 0
 
@@ -28,8 +27,8 @@ while True:
             print('Ваше число больше загаданного, попробуйте еще разок')
             digit = int(input('Введите число >>>'))
         else:
+            count +=1
             print('Вы угадали, поздравляем!')
             print('Понадобилось всего', count, 'попыток!')
             print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
-
             break
